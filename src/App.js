@@ -15,6 +15,27 @@ import AddNewCourses from "./templates/Admin/Pages/Courses/addNewCourses";
 import EditCourse from "./templates/Admin/Pages/Courses/editCourse";
 import CoursesTemplate from "./templates/Home/Pages/Courses/CoursesTemplate";
 import addNewUser from "./templates/Admin/Pages/Users/addNewUser";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCu4wdLSdqfKe7a7X1sLZC7TytJ6mQP6ic",
+  authDomain: "bc05-nhom8-elearning.firebaseapp.com",
+  projectId: "bc05-nhom8-elearning",
+  storageBucket: "bc05-nhom8-elearning.appspot.com",
+  messagingSenderId: "172004485377",
+  appId: "1:172004485377:web:02a94e08b0e16dc6ef5300",
+  measurementId: "G-TW9TLWRD7G"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 export const history = createBrowserHistory();
 
 function App() {
